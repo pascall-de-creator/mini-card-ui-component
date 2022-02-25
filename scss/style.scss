@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$primary-color: #525A89;
+$bg-color: #2d355e;
+
+* {
+    font-family: poppins;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: max-content;
+    height: max-content;
+    background-color: $primary-color;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: #222 1px 1px 11px 1px;
+
+    &__img {
+        height: 100px;
+        width: 100px;
+        border-radius: 1rem;
+    }
+    &__username {
+        color: white;
+        font-weight: 700;
+        margin: 1rem 0px 0px 0.5px;
+    }
+    &__role {
+        font-size: 1rem;
+        color: white;
+        font-weight: 300;
+        margin: 0.1rem 0px;
+    }
+    &__link {
+        color: cyan;
+        margin: 2rem 0px 0px 0px;
+    }
+}
